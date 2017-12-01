@@ -43,6 +43,7 @@ class Application
   def check_and_add(new_item)
     if @@items.include?(new_item)
       @@cart << new_item
+      raise @@cart.inspect
       return "added #{new_item}"
     else
       return "We don't have that item"
