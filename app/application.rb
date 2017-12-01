@@ -44,7 +44,7 @@ class Application
     if @@items.include?(new_item)
       raise @@cart.inspect
       @@cart << new_item
-      
+
       return "added #{new_item}"
     else
       return "We don't have that item"
