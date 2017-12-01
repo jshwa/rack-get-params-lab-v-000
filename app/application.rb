@@ -24,6 +24,7 @@ class Application
       end
     elsif req.path.match(/add/)
       new_item = req.params["item"]
+      raise new_item.inspect
       check_and_add(new_item)
     else
       resp.write "Path Not Found"
