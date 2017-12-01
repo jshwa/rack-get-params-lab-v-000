@@ -41,5 +41,6 @@ class Application
       @@cart << new_item
     else
       return "Couldn't add #{new_item}"
+    end
   end
 end
